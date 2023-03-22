@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir as imagens em dispositivos distintos</p>
+
+    <picture>
+        <source media="max-width: 750px"srcset="imagens/media" type="image/png">
+        <img src="imagens/grande.jpg" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Aprender reproduzir o audio</p>
+    <audio src="pasta/nome" controls autoplay></audio>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="pasta/nome" type="audio/mp3">
+        <source src="pasta/nome" type="audio/ogg">
+        <source src="pasta/nome" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio</p>
+    </audio>
+</body>
+</html>
